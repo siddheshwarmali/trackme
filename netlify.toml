@@ -1,2 +1,11 @@
 [build]
-  functions = "api"
+  publish = "."
+
+[[redirects]]
+  from = "/index.html"
+  to = "/"
+  status = 301
+  force = true
+
+[functions]
+  included_files = ["api/**/*.js"]
